@@ -235,6 +235,75 @@ a.en:before {
   font-size: 1.25rem;
 }
 
+.container-projetos {
+  width: 100%;
+  padding: 15rem 0 10rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  border: 2px solid #9ae5f3;
+  border-radius: 5px;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  opacity: 80%;
+}
+
+.card-header {
+  background-color: #9ae5f3;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+  color: white;
+  text-align: justify;
+}
+
+.card-body p {
+  margin-bottom: 1rem;
+}
+
+.icon-card {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.card-footer {
+  padding: 1rem;
+}
+
+.button-github {
+  padding: 1rem;
+  background-color: #9ae5f3;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.button-github:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.github-icon {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1024px) {
   .logo {
     font-size: 1rem;

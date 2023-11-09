@@ -18,6 +18,15 @@ $(function () {
     $("#text-sobre-4").text(
       "Buscando uma oportunidade para atuar como Desenvolvedor"
     );
+    $("#text-projeto-1").text(
+      "API criada para adição, edição e remoção de filmes da série de filmes de Star Wars. Realizada com Back-end em NodeJs e Front-end com ReactJs e Tailwind."
+    );
+    $("#text-projeto-2").text(
+      "Site criado para casamento. Realizado com ReactJs e Tailwind"
+    );
+    $("#text-projeto-3").text(
+      "Site criado para casamento. Realizado com HTML e CSS"
+    );
     $(".language-selected").text("pt-BR");
     $(".language-selected").removeClass("change-en");
     $(".language-selected").addClass("change-br");
@@ -41,6 +50,15 @@ $(function () {
     $("#text-sobre-3").text("Interest in Front-end and Back-end development");
     $("#text-sobre-4").text(
       "Looking for an opportunity to work as a Developer"
+    );
+    $("#text-projeto-1").text(
+      "API created for adding, editing and removing films from the Star Wars film series. Carried out with Back-end in NodeJs and Front-end with ReactJs and Tailwind."
+    );
+    $("#text-projeto-2").text(
+      "Website created for wedding. Made with ReactJs and Tailwind"
+    );
+    $("#text-projeto-3").text(
+      "Website created for wedding. Created with HTML and CSS"
     );
     $(".language-selected").text("en-US");
     $(".language-selected").removeClass("change-br");

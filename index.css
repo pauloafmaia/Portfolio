@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  background: #19191a;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #19191a;
+  z-index: -1;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #9ae5f3;
+  color: #9ae5f3;
+}
+
+#check {
+  display: none;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.language {
+  position: relative;
+  width: 120px;
+  margin-left: 40px;
+}
+
+.language-selected {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.language-selected:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.language-selected.change-br:before {
+  background-image: url("https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png");
+}
+.language-selected.change-en:before {
+  background-image: url("https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png");
+}
+
+.language ul {
+  position: absolute;
+  width: 150px;
+  background-color: #fff;
+  display: none;
+}
+
+.language ul li {
+  list-style: none;
+}
+
+.language ul li a {
+  display: block;
+  color: black;
+  padding: 1rem;
+}
+
+.language ul li:hover {
+  background-color: #9ae5f3;
+}
+
+.language ul li a:hover {
+  color: black;
+}
+
+.language ul li a:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+a.br:before {
+  background-image: url("https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png");
+}
+
+a.en:before {
+  background-image: url("https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png");
+}
+
+.language:hover ul {
+  display: block;
+}
+
+.content {
+  width: 100%;
+}
+
+.container-home {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 15rem 0 10rem 0;
+}
+
+.container-home h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.container-home h2 {
+  color: lightgrey;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-weight: lighter;
+}
+
+.home-icon {
+  color: white;
+  font-size: 3rem;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.home-icon:hover {
+  color: #9ae5f3;
+  border: 2px solid #9ae5f3;
+}
+
+.container-sobre {
+  width: 100%;
+  padding: 15rem 0 10rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container-sobre img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-right: 5rem;
+}
+
+.text-sobre {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-sobre h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-sobre span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.span-sobre {
+  display: inline-flex;
+}
+
+.sobre-icon {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    font-size: 0.75rem;
+  }
+
+  .language-selected {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    display: grid;
+    top: 100%;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background: #19191a;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  #check:checked ~ .navbar {
+    height: 50vh;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: 0.3s ease;
+    opacity: 0;
+    line-height: 50px;
+  }
+
+  #check:checked ~ .navbar a {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(0.15s * var(--i));
+  }
+
+  .language {
+    margin-right: 3rem;
+  }
+}

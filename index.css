@@ -38,13 +38,6 @@ body {
   z-index: -1;
 }
 
-.logo {
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-}
-
 .navbar {
   display: inline-flex;
   align-items: center;
@@ -77,6 +70,10 @@ body {
   display: none;
 }
 
+/* TEST */
+
+/* TEST */
+
 .language {
   position: relative;
   width: 120px;
@@ -99,13 +96,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 10px;
-}
-
-.language-selected.change-br:before {
-  background-image: url("https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png");
-}
-.language-selected.change-en:before {
-  background-image: url("https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png");
 }
 
 .language ul {
@@ -305,10 +295,6 @@ a.en:before {
 }
 
 @media (max-width: 1024px) {
-  .logo {
-    font-size: 1rem;
-  }
-
   .navbar a {
     font-size: 0.75rem;
   }
@@ -319,6 +305,62 @@ a.en:before {
 }
 
 @media (max-width: 768px) {
+  .dropbtn {
+    background-color: #19191a;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .dropbtn:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./images/brazil-flag-square-xs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+
+  .language-selected.change-br:before {
+    background-image: url("./images/brazil-flag-square-xs.png");
+  }
+
+  .language-selected.change-en:before {
+    background-image: url("./images/united-states-of-america-flag-square-xs.png");
+  }
+
+  .language-selected.change-es:before {
+    background-image: url("./images/spain-flag-square-xs.png");
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+
   .icons {
     display: inline-flex;
   }
@@ -348,7 +390,7 @@ a.en:before {
   }
 
   #check:checked ~ .navbar {
-    height: 50vh;
+    height: 60vh;
   }
 
   .navbar a {
@@ -368,7 +410,8 @@ a.en:before {
     transition-delay: calc(0.15s * var(--i));
   }
 
-  .language {
-    margin-right: 3rem;
+  #sobre-mim,
+  #projetos {
+    display: none;
   }
 }

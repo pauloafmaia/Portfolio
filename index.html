@@ -9,8 +9,6 @@
   </head>
   <body>
     <header class="header">
-      <!-- <a href="#" class="logo">Paulo Maia</a> -->
-
       <input type="checkbox" id="check" />
 
       <label for="check" class="icons">
@@ -28,12 +26,26 @@
         <a href="#habilidades" style="--i: 3">Habilidades</a>
         <a href="#contatos" style="--i: 4">Contatos</a>
       </nav>
-      <div class="language">
-        <div class="language-selected">pt-BR</div>
-        <ul>
-          <li><a href="#" class="br">Português</a></li>
-          <li><a href="#" class="en">English</a></li>
-        </ul>
+      <!-- <div class="language">
+        <button onclick="openLanguage()" class="language-selected">
+          pt-BR
+        </button>
+        <div id="language-dropdown" class="dropdown-content">
+          <ul>
+            <li><a href="#" class="br">Português</a></li>
+            <li><a href="#" class="en">English</a></li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn language-selected">
+          pt-BR
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="br" href="#">Português</a>
+          <a class="en" href="#">English</a>
+          <a class="es" href="#">Español</a>
+        </div>
       </div>
     </header>
     <div class="content">
@@ -202,3 +214,21 @@
   type="text/javascript"
 ></script>
 <script src="./language.js"></script>
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  };
+</script>

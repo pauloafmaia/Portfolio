@@ -37,7 +37,7 @@ $(function () {
     $("#text-habilidades-2").text(
       "Desenvolvimento de APIs com as linguagens NodeJs e Java com Spring Boot."
     );
-    $(".language-selected").text("pt-BR");
+    $(".language-selected").text("Português");
     $(".language-selected").removeClass("change-en");
     $(".language-selected").addClass("change-br");
   });
@@ -80,7 +80,7 @@ $(function () {
     $("#text-habilidades-2").text(
       "Development of APIs with NodeJs and Java with Spring boot"
     );
-    $(".language-selected").text("en-US");
+    $(".language-selected").text("English");
     $(".language-selected").removeClass("change-br");
     $(".language-selected").addClass("change-en");
   });

@@ -193,12 +193,12 @@ a.en:before {
   justify-content: center;
 }
 
-.container-sobre img {
+/* .container-sobre img {
   width: 200px;
   height: 200px;
   border-radius: 100%;
   margin-right: 5rem;
-}
+} */
 
 .text-sobre {
   color: white;
@@ -225,7 +225,7 @@ a.en:before {
   font-size: 1.25rem;
 }
 
-.container-projetos {
+/* .container-projetos {
   width: 100%;
   padding: 15rem 0 10rem 0;
   display: flex;
@@ -242,9 +242,9 @@ a.en:before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
-.card:hover {
+/* .card:hover {
   opacity: 80%;
 }
 
@@ -292,7 +292,7 @@ a.en:before {
 .github-icon {
   margin-right: 0.75rem;
   font-size: 1.5rem;
-}
+} */
 
 @media (max-width: 1024px) {
   .navbar a {
@@ -330,10 +330,6 @@ a.en:before {
 
   .language-selected.change-en:before {
     background-image: url("./images/united-states-of-america-flag-square-xs.png");
-  }
-
-  .language-selected.change-es:before {
-    background-image: url("./images/spain-flag-square-xs.png");
   }
 
   .dropdown {
@@ -410,8 +406,114 @@ a.en:before {
     transition-delay: calc(0.15s * var(--i));
   }
 
-  #sobre-mim,
-  #projetos {
-    display: none;
+  .container-sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sobre-titulo {
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .projetos-titulo {
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .habilidades-titulo {
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .sobre-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .sobre-img img {
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  .text-sobre {
+    padding: 1rem;
+  }
+
+  .text-sobre h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .text-sobre span {
+    font-size: 0.75rem;
+  }
+
+  .container-projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .card {
+    border: 2px solid #9ae5f3;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .card-header {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .card-body {
+    color: white;
+  }
+
+  .card-body p {
+    font-size: 0.75rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .card-body span {
+    font-size: 1.5rem;
+  }
+
+  .card-footer {
+    margin-top: 2rem;
+  }
+
+  .button-github {
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    background-color: #9ae5f3;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+  }
+
+  .container-habilidades {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
   }
 }

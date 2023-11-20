@@ -37,6 +37,9 @@ $(function () {
     $("#text-habilidades-2").text(
       "Desenvolvimento de APIs com as linguagens NodeJs e Java com Spring Boot."
     );
+    $("#habilidades-2").text("Idiomas");
+    $("#habilidades-1").text("Outras habilidades");
+    $("#text-habilidades-4").text("Inglês avançado");
     $(".language-selected").text("Português");
     $(".language-selected").removeClass("change-en");
     $(".language-selected").addClass("change-br");
@@ -80,6 +83,9 @@ $(function () {
     $("#text-habilidades-2").text(
       "Development of APIs with NodeJs and Java with Spring boot"
     );
+    $("#habilidades-2").text("Languages");
+    $("#habilidades-1").text("Other skills");
+    $("#text-habilidades-4").text("Advanced English");
     $(".language-selected").text("English");
     $(".language-selected").removeClass("change-br");
     $(".language-selected").addClass("change-en");

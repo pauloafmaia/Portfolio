@@ -262,6 +262,12 @@ body {
   border: 2px solid #9ae5f3;
   border-radius: 1rem;
   padding: 1rem;
+  width: 100%;
+}
+
+#text-habilidades-3,
+#text-habilidades-4 {
+  text-align: center;
 }
 
 .card-container {
